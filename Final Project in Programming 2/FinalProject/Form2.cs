@@ -62,6 +62,7 @@ namespace FinalProject
             {
                 //easy level
                 lbGamelevel.Text = "Level : Easy";
+                BananaRipe.Top +=1;
             }
             if (score >= 100)
             {
