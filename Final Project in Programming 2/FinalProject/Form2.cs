@@ -17,7 +17,7 @@ namespace FinalProject
         public string course;
         public string name;
         public int score = 0;
-        public int lives = 5;
+        public int lives = 3;
 
         public Form2()
         {
@@ -63,6 +63,7 @@ namespace FinalProject
                 //easy level
                 lbGamelevel.Text = "Level : Easy";
                 BananaRipe.Top +=1;
+                OverRipe.Top +=2;
             }
             if (score >= 100)
             {
