@@ -62,27 +62,28 @@ namespace FinalProject
             {
                 //easy level
                 lbGamelevel.Text = "Level : Easy";
-                BananaRipe.Top +=1;
-                OverRipe.Top +=2;
+                BananaRipe.Top += 1;
+                OverRipe.Top += 2;
             }
             if (score >= 100)
             {
                 //medium level. speed of overripe banana increases by 2
                 lbGamelevel.Text = "Level : Medium";
-                OverRipe.Top +=2;
+                BananaRipe.Top += 2;
+                OverRipe.Top +=3;
             }
             if (score >= 200)
             {
                 //hard level. banana increases speed by 1 and overripe banana increases speed by 3
                 lbGamelevel.Text = "Level : Hard";
-                BananaRipe.Top += 1;
-                OverRipe.Top += 3;
+                BananaRipe.Top += 3;
+                OverRipe.Top += 4;
             }
             if (score >= 500)
             {
                 //impossible level. banana speed increases by 2 and overripe banana increases by 5
                 lbGamelevel.Text = "Level : Impossible!";
-                BananaRipe.Top += 2;
+                BananaRipe.Top += 4;
                 OverRipe.Top += 5;
             }
 
@@ -91,7 +92,7 @@ namespace FinalProject
         //shooting function
         public void Shoot()     
         {   
-            bullet.Left += 150;     //travel time of bullet when fired
+            bullet.Left += 100;     //travel time of bullet when fired
             if (bullet.Left > 1400)     
             {
                 shooter.Image = Properties.Resources.shoot_idle; 
